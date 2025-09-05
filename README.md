@@ -4,74 +4,66 @@ Inscrição curso técnico
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Curso Técnico - Inscreva-se</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curso Técnico - Inscrição</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       margin: 0;
       padding: 0;
       color: #fff;
     }
-
     .container {
-      max-width: 500px;
+      max-width: 480px;
       margin: 60px auto;
       background: #fff;
-      padding: 30px;
       border-radius: 12px;
+      padding: 30px;
       color: #333;
       box-shadow: 0 0 25px rgba(0,0,0,0.2);
     }
-
     h1 {
       text-align: center;
-      font-size: 28px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
-
     p {
       text-align: center;
-      font-size: 16px;
+      margin-bottom: 20px;
       color: #555;
-      margin-bottom: 25px;
     }
-
     input, select, button {
       width: 100%;
       padding: 14px;
       margin: 10px 0;
+      font-size: 16px;
       border-radius: 8px;
       border: 1px solid #ccc;
-      font-size: 16px;
+      box-sizing: border-box;
     }
-
     button {
       background-color: #2c5364;
-      color: white;
       border: none;
-      font-weight: bold;
-      transition: background 0.3s;
+      color: white;
+      font-weight: 700;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
-
     button:hover {
       background-color: #203a43;
     }
-
     .footer {
       text-align: center;
       margin-top: 30px;
       font-size: 14px;
-      color: #eee;
+      color: #ddd;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Inscreva-se no Curso Técnico</h1>
-    <p>Preencha seus dados para receber informações e garantir sua vaga.</p>
+    <p>Preencha seus dados para garantir sua vaga.</p>
 
     <form action="https://formsubmit.co/luizam287%40gmail.com" method="POST">
       <input type="text" name="nome" placeholder="Seu nome completo" required />
@@ -95,6 +87,7 @@ Inscrição curso técnico
       <input type="hidden" name="_subject" value="Nova Inscrição no Curso Técnico" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_template" value="box" />
+      <!-- Atualize para sua página de obrigado ou remova essa linha para usar padrão -->
       <input type="hidden" name="_next" value="https://seusite.com/obrigado.html" />
 
       <button type="submit">Quero Saber Mais</button>
